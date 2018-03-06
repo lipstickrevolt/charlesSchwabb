@@ -26,7 +26,6 @@ button {
   width: 40%;
   margin: 5% 5% 0 0;
   float: left;
-  background: red;
   max-width: 280px;
 }
 .box:after {
@@ -48,7 +47,7 @@ button {
 #whiteBox {
   background-color: white;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     :root {
         height: 100px;
     }
