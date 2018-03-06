@@ -1,0 +1,61 @@
+:root {
+  --max-width: 230px;
+}
+button {
+  margin: 75px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.container{
+  max-width: 980px;
+  position: relative;
+}
+.boxes {
+  max-width: var(--max-width);
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+.box {
+  position: relative;
+  width: 40%;
+  margin: 5% 5% 0 0;
+  float: left;
+  background: red;
+}
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#redBox {
+  background-color: red;
+}
+#greenBox {
+  background-color: green;
+  
+}
+#blueBox {
+  background-color: blue;
+  
+}
+#whiteBox {
+  background-color: white;
+}
+@media screen and (max-width: 280px) {
+    :root {
+        --max-width: 100px;
+        height: 100px;
+    }
+  button {
+    margin: 0px;
+    bottom: 0;
+  }
+}

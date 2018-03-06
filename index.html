@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+:root {
+  --max-width: 230px;
+}
+button {
+  margin: 75px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.container{
+  max-width: 980px;
+  position: relative;
+}
+.boxes {
+  max-width: var(--max-width);
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+.box {
+  position: relative;
+  width: 40%;
+  margin: 5% 5% 0 0;
+  float: left;
+  background: red;
+}
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#redBox {
+  background-color: red;
+}
+#greenBox {
+  background-color: green;
+  
+}
+#blueBox {
+  background-color: blue;
+  
+}
+#whiteBox {
+  background-color: white;
+}
+@media screen and (max-width: 280px) {
+    :root {
+        --max-width: 100px;
+        height: 100px;
+    }
+  button {
+    margin: 0px;
+    bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="boxes" id="redBox">
+        <button onclick="makeItRed()">Make it red!</button>
+      </div>
+    </div>
+    <div class="box">
+    <div class="boxes" id="greenBox">
+      <button onclick="makeItGreen()">Make it green!</button>
+    </div>
+    </div>
+    <div class="box">
+    <div class="boxes" id="blueBox">
+      <button onclick="makeItBlue()">Make it blue!</button>
+    </div>
+    </div>
+    <div class="box">
+    <div class="boxes" id="whiteBox">
+      <button onclick="resetColors()">Reset Colors</button></div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script id="jsbin-javascript">
+function resetColors(){
+  $("#redBox").css("background-color","red");
+  $("#blueBox").css("background-color","blue");
+  $("#greenBox").css("background-color","green");
+}
+function makeItRed(){
+  $("#blueBox").css("background-color","red");
+  $("#redBox").css("background-color","red");
+  $("#greenBox").css("background-color","red");
+  
+}
+
+function makeItGreen(){
+   $("#redBox").css("background-color","green");
+  $("#blueBox").css("background-color","green");
+  $("#greenBox").css("background-color","green");
+}
+function makeItBlue(){
+   $("#redBox").css("background-color","blue");
+  $("#greenBox").css("background-color","blue");
+  $("#blueBox").css("background-color","blue");
+}
+
+var bird = ('x');
+console.log(bird + bird);
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">:root {
+  --max-width: 230px;
+}
+button {
+  margin: 75px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.container{
+  max-width: 980px;
+  position: relative;
+}
+.boxes {
+  max-width: var(--max-width);
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+.box {
+  position: relative;
+  width: 40%;
+  margin: 5% 5% 0 0;
+  float: left;
+  background: red;
+}
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#redBox {
+  background-color: red;
+}
+#greenBox {
+  background-color: green;
+  
+}
+#blueBox {
+  background-color: blue;
+  
+}
+#whiteBox {
+  background-color: white;
+}
+@media screen and (max-width: 280px) {
+    :root {
+        --max-width: 100px;
+        height: 100px;
+    }
+  button {
+    margin: 0px;
+    bottom: 0;
+  }
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">function resetColors(){
+  $("#redBox").css("background-color","red");
+  $("#blueBox").css("background-color","blue");
+  $("#greenBox").css("background-color","green");
+}
+function makeItRed(){
+  $("#blueBox").css("background-color","red");
+  $("#redBox").css("background-color","red");
+  $("#greenBox").css("background-color","red");
+  
+}
+
+function makeItGreen(){
+   $("#redBox").css("background-color","green");
+  $("#blueBox").css("background-color","green");
+  $("#greenBox").css("background-color","green");
+}
+function makeItBlue(){
+   $("#redBox").css("background-color","blue");
+  $("#greenBox").css("background-color","blue");
+  $("#blueBox").css("background-color","blue");
+}
+
+var bird = ('x');
+console.log(bird + bird);
+
+
+</script></body>
+</html>
